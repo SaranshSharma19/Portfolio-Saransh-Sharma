@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8649710e2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Saranshs.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Engineering Student</p>
+                <h1>Hi, I'm <span >Saransh</span> Sharma<br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!--                about               -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="ran">
+                        Hello I'm Saransh Sharma, basically, I belong to Ghaziabad, Uttar Pradesh. Currently, I am pursuing B.tech in Computer Science and Engineering
+                        with specialization in Data Science from ABES Engineering College. I completed my schooling from KDB Public School and got 70% in 10th and 89.6% in 12th.
+                        I am a tech enthusiast who is always looking forward to learn new skills. Apart from this, being a data science student I am much interested to build different things using ML, and solving various real-life problems by analyzing and providing insights into solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Python, C/C++</li>
+                            <li><span>Data Science</span><br>Data Analysis and Visualization</li>
+                            <li><span>Libraries</span><br>Numpy, Pandas, Matplotlib, Seaborn, Scipy</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Java Script</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>ABES Engineering College<br>Computer Science and Engineering ( Data Science )</li>
+                            <li><span>2019-2020</span><br>KDB Public School<br>Senior Secondary ( 12th ) with 89.6%</li>
+                            <li><span>2017-2018</span><br>KDB Public School<br>Secondary ( 10th ) with 70.8%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>Cisco</span><br>PCAP: Programming Essentials in Python<br>Cyber Security Essentials</li>
+                            <li><span>Data Science</span><br>Introduction to Data Science and Machine Learning</li>
+                            <li><span>Cloud</span><br>AWS Cloud Practitioner Essentials<br> Introduction to Cloud Computing</li>
+                            <li><span>Web Development</span><br>Front End Developmet</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep 2022-Oct 2022</span><br>Code Clause<br>Web Development Internship</li>
+                            <li><span>Feb 2022-Mar 2022</span><br>Two Waits Technology Pvt. Ltd.<br>DSA Scholar Internship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--        Services         -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://github.com/saranshsharmma1919/Twitter-Sentimental-Analysis" target="_blank"><h2>Twitter Sentiment Analysis</h2>
+                    <p>In this project we analyze the sentiments behind the
+                        twitter tweets. We have three type of sentiments: positive, neutral
+                        and negative and show some tweets as an output. During this project
+                        I learnt how to use twitter api and how to analyze the tweets.</p>
+                    <a href="https://github.com/saranshsharmma1919/Twitter-Sentimental-Analysis" target="_blank">Project Source Code</a></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-discord"></i>
+                    <a href="https://github.com/saranshsharmma1919/Discord-Bot" target="_blank"><h2>Discord Bot</h2>
+                    <p>It is used to kick, ban, remove, unban someone and
+                        also used to play music on the server. During the project I learnt how
+                        to use tokens and different modules of python.<br>Let's have some fun with this bot.</p>
+                    <a href="https://github.com/saranshsharmma1919/Discord-Bot" target="_blank">Project Source Code</a></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-keyboard"></i>
+                    <a href="https://github.com/saranshsharmma1919/textutils" target="_blank"><h2>TextUtils</h2>
+                    <p>Python project created using Django framework and Bootstarp for text
+                        analysis and modification</p>
+                    <a href="https://github.com/saranshsharmma1919/textutils" target="_blank">Project Source Code</a></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--         Contact            -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href=" mailto: saranshsharma1919@gmail.com"><i class="fa-solid fa-envelope"></i></a> saranshsharma1919@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91-9250507995</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saransh-sharma-481742202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/saranshsharmma1919" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://leetcode.com/Saransh_MG/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                    <a href="Resume_Saransh_Sharma.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Saransh Sharma ❤️‍🔥</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0"
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwaU4zAl_4mR3N9ipEpqZJTqFYWfVjmDbaIjd2u6ISMxRibGhumeQFOuHsfwoclTCMlQw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
